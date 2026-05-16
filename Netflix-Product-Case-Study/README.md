@@ -34,4 +34,14 @@ the Netflix app to communicate new features to existing users.
 ## North Star Metric
 Engagement Rate = (Users who interacted with BUZZ / Total users) × 100
 
-
+## Links
+- [Case Study PDF](./Netflix_Case_Study.pdf)
+- [KPI Tree](https://whimsical.com/kpi-tree-increase-product-adoption-rate-2gdYJyx2rach5E7HwnpxRW@6HYTAunKLgTTyvQ4eE1jdmuG46Djy49rpgCc957VdceAy3a)
+- [User Survey Responses](https://docs.google.com/spreadsheets/d/1suZ7e7Vaql-JTJ37bhWCoi2cU4dvrvYf9P-Ef2gW9TI/edit?usp=sharing)
+- [Solution Mind Map](https://whimsical.com/solution-mindmap-PHHZF4UPwuWPUYB7gaeGY1)
+- [Wireframe (Figma)](https://www.figma.com/file/Eo2PMjMNoIDoiAXJ32u6uw/WIREFRAME?type=design&node-id=0%3A1&mode=design&t=AiyjL1vq1SkeiOFa-1)
+- [Prototype (Figma)](https://www.figma.com/proto/XRUEDDzCRKfNpEF0hgLDbG/NL-PROTOTYPE?type=design&node-id=1-65&t=09AC4GjgO5x2OhaK-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A65&mode=design)
+- [User Flow and Information Architecture](https://whimsical.com/user-flow-and-flow-chart-T7fquGfgvaG7tvRVV3xd61)
+- [Detailed Setup and Rubric](https://whimsical.com/rubric-FMUxXQwHLi4K3GV4cogvBe)
+- [Spatial Audio Feature Video](https://youtu.be/0RMh2LnJeGY)
+- [OTT Market Research](https://www.statista.com/outlook/amo/media/tv-video/ott-video/worldwide)
