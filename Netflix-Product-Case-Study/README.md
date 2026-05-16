@@ -34,5 +34,4 @@ the Netflix app to communicate new features to existing users.
 ## North Star Metric
 Engagement Rate = (Users who interacted with BUZZ / Total users) × 100
 
-## Links
-- [Case Study Document](your-link-here)
+
