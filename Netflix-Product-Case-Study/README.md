@@ -35,7 +35,7 @@ the Netflix app to communicate new features to existing users.
 Engagement Rate = (Users who interacted with BUZZ / Total users) × 100
 
 ## Links
-- [Case Study PDF](./Netflix_Case_Study.pdf)
+
 - [KPI Tree](https://whimsical.com/kpi-tree-increase-product-adoption-rate-2gdYJyx2rach5E7HwnpxRW@6HYTAunKLgTTyvQ4eE1jdmuG46Djy49rpgCc957VdceAy3a)
 - [User Survey Responses](https://docs.google.com/spreadsheets/d/1suZ7e7Vaql-JTJ37bhWCoi2cU4dvrvYf9P-Ef2gW9TI/edit?usp=sharing)
 - [Solution Mind Map](https://whimsical.com/solution-mindmap-PHHZF4UPwuWPUYB7gaeGY1)
