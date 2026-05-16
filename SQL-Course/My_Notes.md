@@ -8,6 +8,7 @@
 * [2026-05-12]: Learned AS keyword — aliasing columns in SELECT
 * [2026-05-15]: Learned BETWEEN, IN, LIKE, ILIKE — pattern matching and filtering in WHERE clause
 * [2026-05-16]: Learned JOINs — INNER, LEFT, RIGHT, FULL OUTER, SELF JOIN + UNION vs UNION ALL
+* [2026-05-17]: Learned Timestamps, EXTRACT, TO_CHAR, Mathematical Functions, String Functions and Operators
 
 ---
 
@@ -271,3 +272,110 @@ ON c.customer_id = p.customer_id;
 | `SELF JOIN` | Rows from same table matched with itself | Possible |
 | `UNION` | Stacked rows from both queries, no duplicates | No |
 | `UNION ALL` | Stacked rows from both queries, with duplicates | No |
+
+---
+
+### Timestamps and Date/Time Functions
+Used to work with date and time data in PostgreSQL.
+
+```sql
+-- Get current timestamp
+SELECT NOW();
+
+-- Get current date only
+SELECT CURRENT_DATE;
+
+-- Get current time only
+SELECT CURRENT_TIME;
+```
+
+### EXTRACT
+Used to pull out a specific part from a timestamp — like year, month, day, hour etc.
+
+```sql
+SELECT EXTRACT(YEAR FROM payment_date) AS year
+FROM payment;
+
+SELECT EXTRACT(MONTH FROM payment_date) AS month
+FROM payment;
+
+SELECT EXTRACT(DAY FROM payment_date) AS day
+FROM payment;
+```
+
+> Common parts you can extract: YEAR, MONTH, DAY, HOUR, MINUTE, SECOND, DOW (day of week), QUARTER
+
+### TO_CHAR
+Used to convert a date or timestamp into a formatted string. Useful for displaying dates in a readable format.
+
+```sql
+SELECT TO_CHAR(payment_date, 'MM-DD-YYYY')
+FROM payment;
+
+SELECT TO_CHAR(payment_date, 'Month DD, YYYY')
+FROM payment;
+```
+
+> TO_CHAR gives you full control over how dates appear in your output.
+
+---
+
+### Mathematical Functions and Operators
+
+```sql
+-- Basic arithmetic in SELECT
+SELECT 10 + 5;   -- Addition
+SELECT 10 - 5;   -- Subtraction
+SELECT 10 * 5;   -- Multiplication
+SELECT 10 / 5;   -- Division
+SELECT 10 % 3;   -- Modulo (remainder)
+
+-- Using on columns
+SELECT ROUND(rental_rate, 2) FROM film;
+
+SELECT rental_rate * 0.1 AS tax
+FROM film;
+```
+
+| Function | What It Does |
+|----------|-------------|
+| `ROUND(x, d)` | Rounds x to d decimal places |
+| `CEIL(x)` | Rounds up to nearest integer |
+| `FLOOR(x)` | Rounds down to nearest integer |
+| `ABS(x)` | Returns absolute (positive) value |
+
+---
+
+### String Functions and Operators
+
+```sql
+-- Combine two columns into one
+SELECT first_name || ' ' || last_name AS full_name
+FROM customer;
+
+-- Convert to uppercase
+SELECT UPPER(first_name) FROM customer;
+
+-- Convert to lowercase
+SELECT LOWER(first_name) FROM customer;
+
+-- Get length of a string
+SELECT LENGTH(first_name) FROM customer;
+
+-- Remove spaces from both sides
+SELECT TRIM('  hello  ');
+
+-- Extract part of a string
+SELECT LEFT(first_name, 3) FROM customer;
+-- Returns first 3 characters
+```
+
+| Function | What It Does |
+|----------|-------------|
+| `\|\|` | Concatenates (joins) strings |
+| `UPPER()` | Converts to uppercase |
+| `LOWER()` | Converts to lowercase |
+| `LENGTH()` | Returns number of characters |
+| `TRIM()` | Removes leading/trailing spaces |
+| `LEFT(x, n)` | Returns first n characters |
+| `RIGHT(x, n)` | Returns last n characters |
