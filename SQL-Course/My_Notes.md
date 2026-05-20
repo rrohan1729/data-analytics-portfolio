@@ -378,4 +378,4 @@ SELECT LEFT(first_name, 3) FROM customer;
 | `LENGTH()` | Returns number of characters |
 | `TRIM()` | Removes leading/trailing spaces |
 | `LEFT(x, n)` | Returns first n characters |
-| `RIGHT(x, n)` | Returns last n characters |
+| `RIGHT(x, n)` | Returns last n characters   |
